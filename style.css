@@ -1,0 +1,133 @@
+body {background: rgb(196, 196, 196)}
+
+.arrowholder {
+    background: white;
+    height: 450px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;  
+    border-radius: 5px 0 0 5px;
+    box-shadow: -2px 5px 5px grey;
+}
+.arrow:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+#reversed {transform: scaleX(-1)}
+
+.picture {
+    background-image: url("images/tree.png");
+    background-size: cover;
+    width: 800px;
+    height: 450px;
+    box-sizing: border-box;  
+    position: relative;
+}
+.greybox {
+    background: black;
+    padding-left: 50px;
+    opacity: 0.5;
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    box-sizing: border-box; 
+}
+
+h1 {
+    color: white;
+    position: absolute;
+    bottom: 40px;
+    left: 50px;
+}
+
+.description {
+    color: rgb(196, 195, 195);
+    font-size: 120%;
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+}
+
+.container1 {
+    display: flex;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 250px;
+    box-shadow: -2px 5px 5px grey;
+}
+ol {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    list-style-type: none;
+    padding-left: 0;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 20px;
+}
+#tree {background-image: url("images/tree.png");}
+#shroom {background-image: url("images/shroom.png");}
+#line {background-image: url("images/line.png");}
+#nebula {background-image: url("images/nebula.png");}
+#eye {background-image: url("images/eye.png");}
+#woman {background-image: url("images/woman.png");}
+#candle {background-image: url("images/candle.png");}
+#tentorsomething {background-image: url("images/tentorsomething.png");}
+
+li {
+    background-position: center;
+    background-size: 178% 100%;
+    height: 50px;
+    width: 50px;
+    border: solid thick white;
+    box-shadow: 0px 2px 2px grey;
+}
+.chosen, li:hover {
+    box-shadow: 0px 4px 2px black;
+    cursor: pointer;
+    height: 52px;
+    width: 50px;
+}
+
+.chosen {
+    position: relative;
+}
+
+li:hover .bubble {
+    display: flex;
+    justify-content: center;
+}
+
+.triangle  {
+    width: 20px;
+    position: absolute;
+    top: -13px;
+    left: 15px;
+}
+
+.bubble {
+    display: none;
+    position: relative;
+
+}
+.imgtitle {
+    background: black;
+    border-radius: 2px;
+    color: white;
+    font-size: 15px;
+    padding: 3px;
+    width: max-content;
+    position: absolute;
+    top: -40px;
+}
+
+.triangledown {
+    width: 20px;
+    position: absolute;
+    top: -17px;
+    left: 15px;
+}
